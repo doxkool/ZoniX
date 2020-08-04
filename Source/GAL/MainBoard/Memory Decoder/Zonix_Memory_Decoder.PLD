@@ -1,0 +1,60 @@
+Name     ZoniX_Memory_Decoder;
+PartNo   N/A;
+Date     02-Aug-2020;
+Revision 01;
+Designer Dominic Emond-Belanger;
+Company  N/A;
+Assembly Z80 Computer;
+Location TBD;
+Device   g20v8a;
+
+
+/************** ZoniX Memory Decoder ******************************
+ *                 ______________
+ *                |Memory Decoder|
+ *       MREQ x---|1  I        24|---x Vcc
+ *         RD x---|2  I      I 23|---x 
+ *         WR x---|3  I      O 22|---x MEMWR
+ *         A3 x---|4  I      O 21|---x MEMRD	
+ *         A4 x---|5  I      O 20|---x ROMCS
+ *         A5 x---|6  I      O 19|---x EXTROM
+ *         A6 x---|7  I      O 18|---x 
+ *         A7 x---|8  I      O 17|---x 
+ *        A14 x---|9  I      O 16|---x 
+ *        A15 x---|10 I      O 15|---x 
+ *      ROMEN x---|11 I      I 14|---x 
+ *        GND x---|12        I 13|---x 
+ *                |______________|
+ *
+ ****************************************************************/
+
+/** Inputs **/
+PIN 1		= MREQ;
+PIN 2		= RD;
+PIN 3		= WR;
+PIN 4		= A3;
+PIN 5		= A4;                 
+PIN 6		= A5;
+PIN 7		= A6;
+PIN 8		= A7;
+PIN 9		= A14;
+PIN 10		= A15;
+PIN 11		= ROMEN;
+
+/** Outputs **/
+PIN 22		= MEMWR;
+PIN 21		= MEMRD;
+PIN 20 	= ROMCS;
+
+/** Logic Equations **/
+memwr		= MREQ # WR;
+memrd		= MREQ # RD;
+
+ROMCS		= (A14 # A15) # ROMEN;
+
+/*
+rom		= !(!A6 & !A7 & A5 &  A4 &  A3) # iowr;
+sio		= !a6 & a7 & !a5 & a4 & !A3;
+ide		= !a6 & !a7 & !a5 &  a4 & !a3;
+*/
+

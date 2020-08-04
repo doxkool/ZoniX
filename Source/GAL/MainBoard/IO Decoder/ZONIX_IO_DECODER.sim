@@ -1,0 +1,64 @@
+%SIGNAL
+PIN   4 =  A3 
+PIN   5 =  A4 
+PIN   6 =  A5 
+PIN   7 =  A6 
+PIN   8 =  A7 
+PIN  22 =  IO00 
+PIN  21 =  IO08 
+PIN  20 =  IO10 
+PIN  19 =  IO18 
+PIN  18 =  IO20 
+PIN  17 =  IO28 
+PIN  16 =  IO30 
+PIN  15 =  IO38 
+PIN   1 =  IORQ 
+PIN   2 =  RD 
+PIN   3 =  WR 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+IO00 =>
+    !A3 & !A4 & !A5 & !A6 & !A7 & !IORQ & !WR
+  # !A3 & !A4 & !A5 & !A6 & !A7 & !IORQ & !RD
+
+IO08 =>
+    A3 & !A4 & !A5 & !A6 & !A7 & !IORQ & !WR
+  # A3 & !A4 & !A5 & !A6 & !A7 & !IORQ & !RD
+
+IO10 =>
+    !A3 & A4 & !A5 & !A6 & !A7 & !IORQ & !WR
+  # !A3 & A4 & !A5 & !A6 & !A7 & !IORQ & !RD
+
+IO18 =>
+    A3 & A4 & !A5 & !A6 & !A7 & !IORQ & !WR
+  # A3 & A4 & !A5 & !A6 & !A7 & !IORQ & !RD
+
+IO20 =>
+    !A3 & !A4 & A5 & !A6 & !A7 & !IORQ & !WR
+  # !A3 & !A4 & A5 & !A6 & !A7 & !IORQ & !RD
+
+IO28 =>
+    A3 & !A4 & A5 & !A6 & !A7 & !IORQ & !WR
+  # A3 & !A4 & A5 & !A6 & !A7 & !IORQ & !RD
+
+IO30 =>
+    !A3 & A4 & A5 & !A6 & !A7 & !IORQ & !WR
+  # !A3 & A4 & A5 & !A6 & !A7 & !IORQ & !RD
+
+IO38 =>
+    A3 & A4 & A5 & !A6 & !A7 & !IORQ & !WR
+  # A3 & A4 & A5 & !A6 & !A7 & !IORQ & !RD
+
+IORD =>
+    IORQ
+  # RD
+
+IOWR =>
+    IORQ
+  # WR
+
+%END
