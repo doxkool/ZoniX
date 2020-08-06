@@ -1,15 +1,15 @@
 
 CUPL(WM)        5.0a  Serial# 60008009
 Device          g20v8as  Library DLIB-h-40-1
-Created         Wed Aug 05 12:13:12 2020
-Name            ZoniX_IO_Decoder
-Partno          N/A
-Revision        01
-Date            02-Aug-2020
-Designer        Dominic Emond-Belanger
-Company         N/A
-Assembly        Z80 Computer
-Location        TBD
+Created         Wed Aug 05 09:27:12 2020
+Name            xxxxxx
+Partno          xxxxxx
+Revision        xxxxxx
+Date            xxxxxx
+Designer        xxxxxx
+Company         xxxxxx
+Assembly        xxxxxx
+Location        xxxxxx
 *QP24 
 *QF2706 
 *G0 
@@ -38,9 +38,10 @@ Location        TBD
 *L02240 11101011011101110111101110111111
 *L02272 11111111101011110111011101111011
 *L02304 10111111111111110000000000000000
-*L02560 11111111010011100010111101000001
+*L02560 11111111011110000111100001111000
+*L02592 01111000011110000111100000000000
 *L02624 00000000000000001111111111111111
 *L02656 11111111111111111111111111111111
 *L02688 111111111111111110
-*C5530
-*31A7
+*C53FC
+*3866
