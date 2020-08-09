@@ -14,8 +14,8 @@ Device   g20v8a;
  *                |Memory Decoder|
  *       MREQ x---|1  I        24|---x Vcc
  *         RD x---|2  I      I 23|---x 
- *         WR x---|3  I      O 22|---x MEMWR
- *         A3 x---|4  I      O 21|---x MEMRD	
+ *         WR x---|3  I      O 22|---x MEMRD
+ *         A3 x---|4  I      O 21|---x MEMWR	
  *         A4 x---|5  I      O 20|---x ROMCS
  *         A5 x---|6  I      O 19|---x EXTROM
  *         A6 x---|7  I      O 18|---x 
@@ -42,8 +42,8 @@ PIN 10		= A15;
 PIN 11		= ROMEN;
 
 /** Outputs **/
-PIN 22		= MEMWR;
-PIN 21		= MEMRD;
+PIN 22		= MEMRD;
+PIN 21		= MEMWR;
 PIN 20 	= ROMCS;
 
 /** Logic Equations **/

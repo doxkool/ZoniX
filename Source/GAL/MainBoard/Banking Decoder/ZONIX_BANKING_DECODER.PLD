@@ -12,7 +12,7 @@ Device   g22v10;
 /************** ZoniX Banking Decoder ******************************
  *                 ______________
  *                | Bank Decoder |
- *        clk x---|1  I        24|---x Vcc
+ *       MREQ x---|1  I        24|---x Vcc
  *         D0 x---|2  I      I 23|---x 
  *         D1 x---|3  I      O 22|---x ROMEN
  *         D2 x---|4  I      O 21|---x BKS0
@@ -29,7 +29,7 @@ Device   g22v10;
  ****************************************************************/
 
 /** Inputs **/
-PIN 1		= clk;
+PIN 1		= MREQ;
 PIN 2		= D0;
 PIN 3		= D1;
 PIN 4		= D2;
@@ -45,12 +45,12 @@ PIN 13		= EN;
 /** Outputs **/
 PIN 22		= ROMEN;
 PIN 21		= BKS0;
-PIN 20 	= BKS1;
-PIN 19 	= BKS2;
-PIN 18 	= ROS0;
-PIN 17 	= ROS1;
-PIN 16 	= CFG6;
-PIN 15 	= CFG7;
+PIN 20 		= BKS1;
+PIN 19 		= BKS2;
+PIN 18 		= ROS0;
+PIN 17 		= ROS1;
+PIN 16 		= CFG6;
+PIN 15 		= CFG7;
 
 /** Logic Equations **/
 
