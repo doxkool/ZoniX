@@ -1,0 +1,207 @@
+{COMPONENT C:\USERS\DOM\ONEDRIVE\PROJETS\Z80 PROJECT\ZONIX\SOURCE\GAL\MAINBOARD\MEMORY DECODER AND EXTENDED ADDR LOGIC\MEM_CS-EXT_ADDR_LOGIC.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Sun Sep 20 17:18:41 2020 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P CLK {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P CFG_Q0 {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P CFG_Q1 {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P CFG_Q2 {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P CFG_Q3 {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P CS_CFG {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P A1 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P A2 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P A14 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P A15 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P ROM_EN {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P MREQ {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P CS_ROM {Pt "I/O"}{Lq 0}{Ploc 330 20}}
+   {P CS_RAM {Pt "I/O"}{Lq 0}{Ploc 330 40}}
+   {P A18_RAM {Pt "I/O"}{Lq 0}{Ploc 330 60}}
+   {P A17_RAM {Pt "I/O"}{Lq 0}{Ploc 330 80}}
+   {P A16_RAM {Pt "I/O"}{Lq 0}{Ploc 330 100}}
+   {P A15_RAM {Pt "I/O"}{Lq 0}{Ploc 330 120}}
+   {P CS_CFG2 {Pt "I/O"}{Lq 0}{Ploc 330 140}}
+   {P CS_CFG1 {Pt "I/O"}{Lq 0}{Ploc 330 160}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 215 290}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 270}
+   [Ts 15][Tj "RC"]
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 310 30}
+   {Pnl 310 50}
+   {Pnl 310 70}
+   {Pnl 310 90}
+   {Pnl 310 110}
+   {Pnl 310 130}
+   {Pnl 310 150}
+   {Pnl 310 170}
+
+   {Sd A 1 2 3 4 5 6 7 8 9 10 11 13 14 15 17 18 19 20 21 22}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 280 300 0}
+   {L 130 260 100 260}
+   {L 130 270 140 260 130 250}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 300 20 330 20}
+   {L 300 40 330 40}
+   {L 300 60 330 60}
+   {L 300 80 330 80}
+   {L 300 100 330 100}
+   {L 300 120 330 120}
+   {L 300 140 330 140}
+   {L 300 160 330 160}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "CLK" 140 260}
+   {T "CFG_Q0" 140 220}
+   {T "CFG_Q1" 140 200}
+   {T "CFG_Q2" 140 180}
+   {T "CFG_Q3" 140 160}
+   {T "CS_CFG" 140 140}
+   {T "A1" 140 120}
+   {T "A2" 140 100}
+   {T "A14" 140 80}
+   {T "A15" 140 60}
+   {T "ROM_EN" 140 40}
+   {T "MREQ" 140 20}
+   [Tj "RC"]
+   {T "CS_ROM" 290 20}
+   {T "CS_RAM" 290 40}
+   {T "A18_RAM" 290 60}
+   {T "A17_RAM" 290 80}
+   {T "A16_RAM" 290 100}
+   {T "A15_RAM" 290 120}
+   {T "CS_CFG2" 290 140}
+   {T "CS_CFG1" 290 160}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G22V10" 215 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\DOM\ONEDRIVE\PROJETS\Z80 PROJECT\ZONIX\SOURCE\GAL\MAINBOARD\MEMORY DECODER AND EXTENDED ADDR LOGIC\MEM_CS-EXT_ADDR_LOGIC 215 280}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N CLK
+   }
+   {N CFG_Q0
+   }
+   {N CFG_Q1
+   }
+   {N CFG_Q2
+   }
+   {N CFG_Q3
+   }
+   {N CS_CFG
+   }
+   {N A1
+   }
+   {N A2
+   }
+   {N A14
+   }
+   {N A15
+   }
+   {N ROM_EN
+   }
+   {N MREQ
+   }
+   {N CS_ROM
+   }
+   {N CS_RAM
+   }
+   {N A18_RAM
+   }
+   {N A17_RAM
+   }
+   {N A16_RAM
+   }
+   {N A15_RAM
+   }
+   {N CS_CFG2
+   }
+   {N CS_CFG1
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}
