@@ -1,0 +1,201 @@
+{COMPONENT C:\USERS\DOM\ONEDRIVE\PROJETS\Z80 PROJECT\ZONIX\SOURCE\GAL\MAINBOARD\DATA FLOW AND IO DECODE\ZONIX_DATA_FLOW_DIR.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Sun Sep 20 18:23:21 2020 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P CLK {Pt "INPUT"}{Lq 0}{Ploc 100 260}}
+   {P MREQ {Pt "INPUT"}{Lq 0}{Ploc 100 220}}
+   {P IORQ {Pt "INPUT"}{Lq 0}{Ploc 100 200}}
+   {P RD {Pt "INPUT"}{Lq 0}{Ploc 100 180}}
+   {P BUSAK {Pt "INPUT"}{Lq 0}{Ploc 100 160}}
+   {P A3 {Pt "INPUT"}{Lq 0}{Ploc 100 140}}
+   {P A4 {Pt "INPUT"}{Lq 0}{Ploc 100 120}}
+   {P A5 {Pt "INPUT"}{Lq 0}{Ploc 100 100}}
+   {P A6 {Pt "INPUT"}{Lq 0}{Ploc 100 80}}
+   {P A7 {Pt "INPUT"}{Lq 0}{Ploc 100 60}}
+   {P B_NMI {Pt "INPUT"}{Lq 0}{Ploc 100 40}}
+   {P M1 {Pt "INPUT"}{Lq 0}{Ploc 100 20}}
+   {P NMI {Pt "I/O"}{Lq 0}{Ploc 330 20}}
+   {P IOSEL {Pt "I/O"}{Lq 0}{Ploc 330 40}}
+   {P DATA_DIR {Pt "I/O"}{Lq 0}{Ploc 330 60}}
+   {P CS_OPT2 {Pt "I/O"}{Lq 0}{Ploc 330 80}}
+   {P CS_OPT1 {Pt "I/O"}{Lq 0}{Ploc 330 100}}
+   {P CS_OPT0 {Pt "I/O"}{Lq 0}{Ploc 330 120}}
+   {P CS_KIO {Pt "I/O"}{Lq 0}{Ploc 330 140}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 215 290}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "RC"]
+   {Pnl 120 270}
+   [Ts 15][Tj "RC"]
+   {Pnl 120 230}
+   {Pnl 120 210}
+   {Pnl 120 190}
+   {Pnl 120 170}
+   {Pnl 120 150}
+   {Pnl 120 130}
+   {Pnl 120 110}
+   {Pnl 120 90}
+   {Pnl 120 70}
+   {Pnl 120 50}
+   {Pnl 120 30}
+   [Ts 15][Tj "LC"]
+   {Pnl 310 30}
+   {Pnl 310 50}
+   {Pnl 310 70}
+   {Pnl 310 90}
+   {Pnl 310 110}
+   {Pnl 310 130}
+   {Pnl 310 150}
+
+   {Sd A 1 2 3 4 5 6 7 8 9 10 11 13 17 18 19 20 21 22 23}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 280 300 0}
+   {L 130 260 100 260}
+   {L 130 270 140 260 130 250}
+   {L 130 220 100 220}
+   {L 130 200 100 200}
+   {L 130 180 100 180}
+   {L 130 160 100 160}
+   {L 130 140 100 140}
+   {L 130 120 100 120}
+   {L 130 100 100 100}
+   {L 130 80 100 80}
+   {L 130 60 100 60}
+   {L 130 40 100 40}
+   {L 130 20 100 20}
+   {L 300 20 330 20}
+   {L 300 40 330 40}
+   {L 300 60 330 60}
+   {L 300 80 330 80}
+   {L 300 100 330 100}
+   {L 300 120 330 120}
+   {L 300 140 330 140}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   {T "CLK" 140 260}
+   {T "MREQ" 140 220}
+   {T "IORQ" 140 200}
+   {T "RD" 140 180}
+   {T "BUSAK" 140 160}
+   {T "A3" 140 140}
+   {T "A4" 140 120}
+   {T "A5" 140 100}
+   {T "A6" 140 80}
+   {T "A7" 140 60}
+   {T "B_NMI" 140 40}
+   {T "M1" 140 20}
+   [Tj "RC"]
+   {T "NMI" 290 20}
+   {T "IOSEL" 290 40}
+   {T "DATA_DIR" 290 60}
+   {T "CS_OPT2" 290 80}
+   {T "CS_OPT1" 290 100}
+   {T "CS_OPT0" 290 120}
+   {T "CS_KIO" 290 140}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "G22V10" 215 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD C:\USERS\DOM\ONEDRIVE\PROJETS\Z80 PROJECT\ZONIX\SOURCE\GAL\MAINBOARD\DATA FLOW AND IO DECODE\ZONIX_DATA_FLOW_DIR 215 280}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N CLK
+   }
+   {N MREQ
+   }
+   {N IORQ
+   }
+   {N RD
+   }
+   {N BUSAK
+   }
+   {N A3
+   }
+   {N A4
+   }
+   {N A5
+   }
+   {N A6
+   }
+   {N A7
+   }
+   {N B_NMI
+   }
+   {N M1
+   }
+   {N NMI
+   }
+   {N IOSEL
+   }
+   {N DATA_DIR
+   }
+   {N CS_OPT2
+   }
+   {N CS_OPT1
+   }
+   {N CS_OPT0
+   }
+   {N CS_KIO
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}
